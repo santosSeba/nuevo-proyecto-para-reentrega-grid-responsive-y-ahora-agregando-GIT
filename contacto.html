@@ -6,99 +6,147 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>SEBASTIAN SANTOS</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
 	<link rel="stylesheet" href="./css/estilos.css" />
 </head>
 
-<body>
-	<div class="contenedor">
-		<header class="header">
-			<div class="logo">
-				<p class="iniciales-logo">ss</p>
-				<a href="./index.html"><h1>Sebastian Santos</h1></a>
-			</div>
-			<nav class="menu">
-				<a href="./misCursos.html">Mis cursos</a>
-				<a href="./acercaDe.html">Acerca de</a>
-				<a href="./articulos.html">Articulos sobre mi</a>
-				<a href="./contacto.html">Contacto</a>
-			</nav>
-		</header>
-		
-		<div class="social">
-			<ul>
-		  <li> <a href="#"  class="fab fa-facebook-f"></a></li>
-		  <li> <a href="#" target="_blank" class="fab fa-facebook-messenger"></a></li>
-		  <li> <a href="#" target="_blank" class="fab fa-whatsapp"></a></li>
+
+<div class="container-fluid">
+	<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+		<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+			<svg class="bi me-2" width="40" height="32">
+				<use xlink:href="#bootstrap" />
+			</svg>
+			<span class="fs-4 ">SEBASTIAN SANTOS</span>
+		</a>
+
+		<ul class="nav nav-pills mioNav">
+			<li class="nav-item"><a href="./index.html" class="nav-link active" aria-current="page">Inicio</a></li>
+			<li class="nav-item"><a href="./acercaDe.html" class="nav-link">Acerca de</a></li>
+			<li class="nav-item"><a href="./articulos.html" class="nav-link">Articulos</a></li>
+			<li class="nav-item"><a href="./contacto.html" class="nav-link">Contacto</a></li>
+			<li class="nav-item"><a href="./misCursos.html" class="nav-link">Mis Cursos</a></li>
 		</ul>
-			</div>
-		
+	</header>
+</div>
 
 
 
-		<article class="articulo destacado">
-				<div class="content" class="bodyContact">
 
-					<h4 class="logo">Contactame <span></span></h4>
-			
-					<div class="contact-wrapper animated bounceInUp">
-						<div class="contact-form">
-							<h3>Tu consulta sera respondida a la brevedad</h3>
-							<form action="">
-								<p>
-									<label>Nombre Completo</label>
-									<input type="text" name="fullname">
-								</p>
-								<p>
-									<label>Correo Electronico</label>
-									<input type="email" name="email">
-								</p>
-								<p>
-									<label>Telefono de contacto</label>
-									<input type="tel" name="phone">
-								</p>
-								<p>
-									<label>Sobre</label>
-									<input type="text" name="affair">
-								</p>
-								<p class="block">
-									<label>Mensage (Especifica toda la informacion que creas importante)
-									</label>
-									<textarea name="message" rows="3"></textarea>
-								</p>
-								<p class="block">
-									<button>
-										ENVIAR CONSULTA
-									</button>
-								</p>
+<div class="container marketing">
+	<main>
+		<div class="row">
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<div class="well well-sm">
+							<form class="form-horizontal" method="post">
+								
+								<fieldset>
+									<legend class="text-center header">Contactame</legend>
+
+									<div class="form-group">
+										<span class="col-md-1 col-md-offset-2 text-center"><i
+												class="fa fa-user bigicon"></i></span>
+										<div class="col-md-8">
+											<input id="fname" name="name" type="text" placeholder="Nombre"
+												class="form-control">
+										</div>
+									</div>
+									<div class="form-group">
+										<span class="col-md-1 col-md-offset-2 text-center"><i
+												class="fa fa-user bigicon"></i></span>
+										<div class="col-md-8">
+											<input id="lname" name="name" type="text" placeholder="Apellido"
+												class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<span class="col-md-1 col-md-offset-2 text-center"><i
+												class="fa fa-envelope-o bigicon"></i></span>
+										<div class="col-md-8">
+											<input id="email" name="email" type="text" placeholder="Correo Electronico"
+												class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<span class="col-md-1 col-md-offset-2 text-center"><i
+												class="fa fa-phone-square bigicon"></i></span>
+										<div class="col-md-8">
+											<input id="phone" name="phone" type="text" placeholder="Telefono"
+												class="form-control">
+										</div>
+									</div>
+
+									<div class="form-group">
+										<span class="col-md-1 col-md-offset-2 text-center"><i
+												class="fa fa-pencil-square-o bigicon"></i></span>
+										<div class="col-md-8">
+											<textarea class="form-control" id="message" name="message"
+												placeholder="Dejame tu mensaje, trata de ser lo mas especifico posible, te respondere a la brevedad."
+												rows="7"></textarea>
+										</div>
+									</div>
+
+									<div class="form-group">
+										<div class="col-md-12 text-center">
+											<button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+										</div>
+									</div>
+								</fieldset>
 							</form>
 						</div>
-						<div class="contact-info">
-							<h4>Informacion de interes</h4>
-							<ul>
-								<li><i class="fas fa-map-marker-alt"></i> Eguiguren 803-Paraná</li>
-								<li><i class="fas fa-phone"></i> (343) 623 1411</li>
-								<li><i class="fas fa-envelope-open-text"></i> santossistemas@gmail.com</li>
-							</ul>
-							<p>Lun-vier de 8:30 a 18:30 hs</p>
-							<button>
-							</button>
-						</div>
 					</div>
-			
 				</div>
-				<div class="contenedor-thumbnail">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.4895514088857!2d-60.506075584991464!3d-31.729835918657745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b45209d5b14ea1%3A0x1fa444883b09c421!2sAtanacio%20Eguiguren%20803%2C%20Paran%C3%A1%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1638586761974!5m2!1ses-419!2sar" width=100% height=100% style="border;" allowfullscreen="" loading="lazy"></iframe>
-		</article>
-		</main>
+			</div>
+		</div>
 
 
 
-		<footer class="footer">
-			<p>Copyright © 2021 SEBASTIAN SANTOS</p>
 
-		</footer>
-	</div>
+		<hr class="featurette-divider">
+
+		<div class="row featurette">
+			<div class="col-md-7">
+				<h2 class="featurette-heading">Estamos en:<span class="text-muted"></span></h2>
+				<p class="lead">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ex doloremque asperiores
+					a,
+					ab at officia dolorum quibusdam cupiditate soluta nesciunt. Perferendis nostrum molestiae distinctio
+					id
+					cum iure maiores eaque?</p>
+			</div>
+			<div class="col-md-5">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3393.4842762648254!2d-60.50385592112782!3d-31.72997996018054!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b45209d5b14ea1%3A0x1fa444883b09c421!2sAtanacio%20Eguiguren%20803%2C%20Paran%C3%A1%2C%20Entre%20R%C3%ADos!5e0!3m2!1ses-419!2sar!4v1639088986777!5m2!1ses-419!2sar"
+					width="450" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+		</div>
+
+
+
+		
+<hr class="featurette-divider">
+</main>
+
+
+<!-- FOOTER -->
+<footer class="container">
+	<p class="float-end"><a href="./index.html">Inicio</a></p>
+	<p>&copy; 2021 Santos, Sebastian. &middot;
+</footer>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+	integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+	crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+	integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+	crossorigin="anonymous"></script>
+
 </body>
 
 </html>
